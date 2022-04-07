@@ -1,18 +1,22 @@
-*{
-    background-color: #333 !important;
-    color: red !important;
+/*nem véglegesek a színek*/
+
+
+a, h1, h3, h4, p{
+    color: white !important;
 }
+
 .maindiv-border{
     margin-top: 10px;
     width: 550px;
     height: 180px;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255); 
 }
+
 .seconddiv-border{
     margin-top: 10px;
     width: 550px;
     height:370px;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
 }
 .melle{
     box-sizing: border-box;
@@ -23,10 +27,14 @@
     margin-top: 10px;
     width: 550px;
     height:370px;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
 }
 .nav-item{
     color: red;
     margin-right: 10px;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+body{
+    background-image: radial-gradient(rgb(10, 10, 10), rgb(20, 20, 20)) !important;
 }
