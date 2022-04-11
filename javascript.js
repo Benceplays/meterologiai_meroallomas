@@ -1,5 +1,17 @@
 let on = true;
 let ellenorzo = false;
+var homerseklet = 34;
+var paratartalom = 30;
+var fenyerosseg = 1;
+var legnyomas = 1020;
+
+function valtozok(){
+    document.getElementById("homerseklet").innerHTML = "Hőmérséklet: " + homerseklet + "°";
+    document.getElementById("paratartalom").innerHTML = "Páratartalom: " + paratartalom + "%";
+    document.getElementById("fenyerosseg").innerHTML = "Fényerősség: " + fenyerosseg + "cd";
+    document.getElementById("legnyomas").innerHTML = "Légnyomás: " + legnyomas + "hPa";
+}
+
 function bejelentkezes(){
     var username = document.getElementById("uname").value;
     var password = document.getElementById("psw").value;
