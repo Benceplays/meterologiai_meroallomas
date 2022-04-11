@@ -77,7 +77,6 @@ body{
     color: white;
     border-radius: 15px;
     margin-left: 25%;
-    margin-top: 10%;
 }
 .mini-csuszi{
     width: 100px;
@@ -93,4 +92,27 @@ body{
 .mini-csuszik{
     margin-top: 10%;
     margin-left: 25%;
+}
+.text-red{
+    color: red;
+}
+.form-check-input{
+    background-color: red !important;
+    border-color: red !important;
+    border-radius: 2px red !important;
+    border: 10% !important;
+}
+.margin-checkbox{
+    margin-left: 25%;
+    margin-top: 10% ;
+}
+.info-settings{
+    width: 20px;
+    height: 20px;
+    margin-left: 32%;
+}
+.csuszi-egesz{
+    height: 30px;
+    box-sizing: border-box;
+    display: block;
 }
