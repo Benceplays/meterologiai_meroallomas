@@ -5,6 +5,10 @@ var paratartalom = 30;
 var fenyerosseg = 1;
 var legnyomas = 1020;
 
+var homersekletm = 30;
+var ehomerseklet = 900;
+var ahomerseklet = 0;
+
 function valtozok(){
     document.getElementById("homerseklet").innerHTML = "Hőmérséklet: " + homerseklet + "°";
     document.getElementById("paratartalom").innerHTML = "Páratartalom: " + paratartalom + "%";
@@ -71,4 +75,8 @@ function casvariable(){
     document.getElementById("prs");
     document.getElementById("fnsborder");
     document.getElementById("lgs");
+}
+
+function atlaghomerseklet(){
+    ahomerseklet = ehomerseklet / homersekletm;
 }
