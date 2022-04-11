@@ -134,4 +134,12 @@ h3{
 .text-red{
     color: red;
 }
-
+.info-settings{
+    width: 20px;
+    height: 20px;
+    margin-left: 25%;
+}
+.margin-checkbox{
+    margin-top: 10%;
+    margin-left: 25%;
+}
