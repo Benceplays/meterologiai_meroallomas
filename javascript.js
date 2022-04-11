@@ -1,6 +1,6 @@
 let on = true;
 let ellenorzo = false;
-var homerseklet = 34;
+var homerseklet = 17;
 var paratartalom = 30;
 var fenyerosseg = 1;
 var legnyomas = 1020;
@@ -23,8 +23,8 @@ function bejelentkezes(){
     }
 }
 function csuszi(element, x, y) {
-    ontitle = "ON"
-    offtitle = "OFF"
+    var ontitle = "ON";
+    var offtitle = "OFF";
     if (on == true){
         document.getElementById("csuszi").style.position="relative";
         document.getElementById("csuszi").style.left="45%";
@@ -37,7 +37,7 @@ function csuszi(element, x, y) {
         document.getElementById("ontitle").innerHTML = ontitle;
         on = true;
     }
-    console.log(on)
+    console.log(on);
 }
 function elfogadasellenorzo(){
     if (document.getElementById("checkbox").checked == true){
@@ -51,10 +51,24 @@ function elfogadasellenorzo(){
 function resetdata(){
     if (ellenorzo == true){
         document.getElementById("reset");
-        alert("A végleges törlésig 5 másodperc van vissza.")
+        alert("A végleges törlésig 5 másodperc van vissza.");
     }
 }
 function infoclick(){
     document.getElementById("infobutton");
-    alert("asd")
+    alert("asd");
+}
+
+function casvariable(){
+    if(homerseklet < 15){
+        document.getElementById("hms").style.borderColor = "rgb(0, 62, 194)";
+    }
+
+    if(homerseklet > 15){
+        document.getElementById("hms").style.borderColor = "rgb(255, 104, 59)";
+    }
+    
+    document.getElementById("prs");
+    document.getElementById("fnsborder");
+    document.getElementById("lgs");
 }
