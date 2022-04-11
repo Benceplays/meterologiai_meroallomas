@@ -79,7 +79,6 @@ body{
     color: white;
     border-radius: 15px;
     margin-left: 25%;
-    margin-top: 10%;
 }
 .mini-csuszi{
     width: 100px;
@@ -96,10 +95,8 @@ body{
     margin-top: 10%;
     margin-left: 25%;
 }
-
-p{
-    font-size: 20px;
-    text-align: center;
+.text-red{
+    color: red;
 }
 
 .fs{

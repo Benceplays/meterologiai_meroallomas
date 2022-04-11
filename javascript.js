@@ -1,4 +1,5 @@
 let on = true;
+let ellenorzo = false;
 function bejelentkezes(){
     var username = document.getElementById("uname").value;
     var password = document.getElementById("psw").value;
@@ -25,4 +26,23 @@ function csuszi(element, x, y) {
         on = true;
     }
     console.log(on)
+}
+function elfogadasellenorzo(){
+    if (document.getElementById("checkbox").checked == true){
+        ellenorzo = true;
+    }
+    
+    if (document.getElementById("checkbox").checked == false){
+        ellenorzo = false;
+    }
+}
+function resetdata(){
+    if (ellenorzo == true){
+        document.getElementById("reset");
+        alert("A végleges törlésig 5 másodperc van vissza.")
+    }
+}
+function infoclick(){
+    document.getElementById("infobutton");
+    alert("asd")
 }
