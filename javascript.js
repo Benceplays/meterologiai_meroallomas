@@ -9,6 +9,10 @@ var homersekletm = 30;
 var ehomerseklet = 900;
 var ahomerseklet = 0;
 
+const d = new Date();
+let minutes = d.getMinutes();
+let hour = d.getHours();
+
 function valtozok(){
     document.getElementById("homerseklet").innerHTML = "Hőmérséklet: " + homerseklet + "°";
     document.getElementById("paratartalom").innerHTML = "Páratartalom: " + paratartalom + "%";
@@ -23,6 +27,10 @@ function jelszonezes(){
     else {
         x.type = "password";
   }
+}
+function ora(){
+    document.getElementById("ora").innerHTML = hour;
+    document.getElementById("ora2").innerHTML = minutes;
 }
 
 function bejelentkezes(){
@@ -69,7 +77,7 @@ function resetdata(){
 }
 function infoclick(){
     document.getElementById("infobutton");
-    alert("asd");
+    alert("A csúszka segítségével kitudjuk kapcsolni a percenkénti mérést.");
 }
 
 function casvariable(){
@@ -86,13 +94,16 @@ function casvariable(){
     if(paratartalom > 30){
         document.getElementById("prs").style.borderColor ="rgb(255, 102, 0)";
     }
-    if(fenyerosseg < 0.5){
+    if(fenyerosseg < 1){
         document.getElementById("fnsborder").style.borderColor = "rgb(255, 255, 153";
     }
-    if(fenyerosseg > 0.5){
+    if(fenyerosseg > 1){
         document.getElementById("fnsborder").style.borderColor = "rgb(51, 153, 255)";
     }
     if(legnyomas < 1100){
+        document.getElementById("lgs").style.borderColor = "rgb(0, 102, 255)";
+    }
+    if(legnyomas > 1100){
         document.getElementById("lgs").style.borderColor = "rgb(0, 102, 255)";
     }
 }
