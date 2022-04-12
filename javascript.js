@@ -1,7 +1,7 @@
 let on = true;
 let ellenorzo = false;
 var homerseklet = 17;
-var paratartalom = 30;
+var paratartalom = 20;
 var fenyerosseg = 1;
 var legnyomas = 1020;
 
@@ -14,6 +14,15 @@ function valtozok(){
     document.getElementById("paratartalom").innerHTML = "Páratartalom: " + paratartalom + "%";
     document.getElementById("fenyerosseg").innerHTML = "Fényerősség: " + fenyerosseg + "cd";
     document.getElementById("legnyomas").innerHTML = "Légnyomás: " + legnyomas + "hPa";
+}
+function jelszonezes(){
+    var x = document.getElementById("psw");
+    if (x.type === "password") {
+        x.type = "text";
+    }
+    else {
+        x.type = "password";
+  }
 }
 
 function bejelentkezes(){
@@ -71,10 +80,21 @@ function casvariable(){
     if(homerseklet > 15){
         document.getElementById("hms").style.borderColor = "rgb(255, 104, 59)";
     }
-    
-    document.getElementById("prs");
-    document.getElementById("fnsborder");
-    document.getElementById("lgs");
+    if(paratartalom < 30){
+        document.getElementById("prs").style.borderColor ="rgb(51, 102, 255)";
+    }
+    if(paratartalom > 30){
+        document.getElementById("prs").style.borderColor ="rgb(255, 102, 0)";
+    }
+    if(fenyerosseg < 0.5){
+        document.getElementById("fnsborder").style.borderColor = "rgb(255, 255, 153";
+    }
+    if(fenyerosseg > 0.5){
+        document.getElementById("fnsborder").style.borderColor = "rgb(51, 153, 255)";
+    }
+    if(legnyomas < 1100){
+        document.getElementById("lgs").style.borderColor = "rgb(0, 102, 255)";
+    }
 }
 
 function atlaghomerseklet(){
